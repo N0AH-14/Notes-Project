@@ -2,36 +2,36 @@
 
 /* Font face definitions */
 @font-face {
-    font-family: 'Soleil';
-    src: url('SoleilBold.otf') format('opentype');
+    font-family: 'FiraCode';
+    src: url(../Fonts/FiraCode-Bold.ttf) format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Soleil';
-    src: url('SoleilBook.otf') format('opentype');
+    font-family: 'FiraCode';
+    src: url(../Fonts/FiraCode-SemiBold.ttf) format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Soleil';
-    src: url('SoleilLight.otf') format('opentype');
+    font-family: 'FiraCode';
+    src: url(../Fonts/FiraCode-Light.ttf) format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Soleil';
-    src: url('SoleilRegular.otf') format('opentype');
+    font-family: 'FiraCode';
+    src: url(../Fonts/FiraCode-Regular.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 /* General settings */
 body {
-    font-family: 'Soleil', Arial, sans-serif;
+    font-family: 'FiraCode', Arial, sans-serif;
     background-color: #e0f7fa;
     color: #333;
     margin: 0;
@@ -48,7 +48,8 @@ header {
 }
 
 header h1 {
-    margin: 0;
+    margin-right: auto;
+    margin-left: 15px;
     color: white;
     font-weight: bold;
 }
@@ -62,6 +63,7 @@ header button {
     border-radius: 4px;
     transition: background-color 0.3s;
     font-weight: bold;
+    margin-right: 20px;
 }
 
 header button:hover {
