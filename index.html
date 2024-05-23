@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://img.icons8.com/clouds/100/notb" />
+    <meta property="og:description"
+        content="This is a Notes Web Application which can create, store, edit your notes." />
+    <meta property="og:title" content="Krishna's Notes Project" />
+    <link rel="icon" href="img/icons.png" type="image/x-icon" />
+    <title>Personal Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.png">
+        <button onclick="home()">Home</button>
+        <div class="search-box">
+            <form id="searchForm">
+                <input type="text" placeholder="Search Notes" id="searchBtn">
+                <submit onclick="search()">Search</submit>
+            </form>
+        </div>
+    </header>
+    <div>
+        <main>
+            <article>
+                <div id="heading">
+                    <h5>My Notes:</h5>
+                    <button id="newNoteBtn" onclick="newNote()">New Note</button>
+                </div>
+                <div id="searchResults" hidden="true">
+                    <h5>Search Results:</h5>
+                </div>
+                <ol>
+                </ol>
+            </article>
+        </main>
+        <aside>
+            <div id="noteForm" hidden="true">
+                <h5>New Note</h5>
+                <form id="newNoteForm">
+                    <input type="text" id="titleBtn" placeholder="Title" required>
+                    <textarea id="textBtn" placeholder="Notes Go Here..." required></textarea>
+                    <submit onclick="addNote()">Add Note</submit>
+                </form>
+            </div>
+            <div id="editForm" hidden="true">
+                <h5>Edit Note</h5>
+                <form id="editNoteForm">
+                    <input type="text" id="titleEditBtn" required>
+                    <textarea id="textEditBtn" required></textarea>
+                    <button id="saveNote">Save Changes</button>
+                </form>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <div>
+            <span>
+                <a href="https://www.linkedin.com/in/n0ah14/">
+                    <img src="img/linkedin.png" alt="linkedin">
+                </a>
+            </span>
+            <span>
+                <a href="https://github.com/N0AH-14">
+                    <img src="img/github.png" alt="linkedin">
+                </a>
+            </span>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
