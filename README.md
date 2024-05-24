@@ -45,6 +45,30 @@ To experience the live project, visit [Krishna's Notes Project](https://notes-pr
     ```
 2. Open `index.html` in your preferred web browser.
 
+## Project Structure
+
+```plaintext
+Krishna's Notes Project
+│
+├── src
+│   ├── css
+│   │   ├── base.css
+│   │   ├── components.css
+│   │   ├── layout.css
+│   │   └── style.css
+│   ├── index.html
+│   └── script.js
+│
+└── res
+    ├── images
+    │   ├── icon.png
+    │   ├── logo.png
+    │   ├── linkedin.png
+    │   └── github.png
+    └── fonts
+        └── FiraCode-Regular.ttf
+```
+
 ## Detailed Overview
 
 ### Architecture
