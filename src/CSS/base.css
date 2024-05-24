@@ -1,0 +1,21 @@
+/* Font face definitions */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+/* CSS Variables */
+:root {
+    --primary-color: #0288d1;
+    --secondary-color: #0277bd;
+    --background-color: #e0f7fa;
+    --text-color: #333;
+    --white: #ffffff;
+    --font-family: 'FiraCode', Arial, sans-serif;
+}
+
+/* General settings */
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}

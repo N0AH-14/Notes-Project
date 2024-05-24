@@ -1,0 +1,23 @@
+/* style.css */
+
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .header,
+    .footer {
+        flex-direction: column;
+    }
+
+    .notes-list {
+        padding-left: 0;
+    }
+
+    .notes-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .notes-list li div {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,35 @@
+
+/* CSS Variables */
+:root {
+    --primary-color: #0288d1;
+    --secondary-color: #0277bd;
+    --background-color: #e0f7fa;
+    --text-color: #333;
+    --white: #ffffff;
+    --font-family: 'FiraCode', Arial, sans-serif;
+}
+/* General settings */
+.header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.main {
+    padding: 20px;
+}
+.aside {
+    padding: 20px;
+    background-color: #e1f5fe;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+    color: var(--white);
+    margin-top: 20px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}

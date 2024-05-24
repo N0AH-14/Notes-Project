@@ -1,0 +1,159 @@
+
+/* CSS Variables */
+:root {
+    --primary-color: #0288d1;
+    --secondary-color: #0277bd;
+    --background-color: #e0f7fa;
+    --text-color: #333;
+    --white: #ffffff;
+    --font-family: 'FiraCode', Arial, sans-serif;
+}
+/* General settings */
+
+.header__title {
+    margin-right: auto;
+    margin-left: 15px;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.header__button,
+.search-box__button,
+.notes-section__new-note-button,
+.aside__button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.header__button:hover,
+.search-box__button:hover,
+.notes-section__new-note-button:hover,
+.aside__button:hover {
+    background-color: var(--secondary-color);
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+.search-box__input {
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.notes-section {
+    margin-bottom: 20px;
+}
+
+.notes-section__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.notes-section__title,
+.search-results__title {
+    margin: 0;
+    font-weight: normal;
+}
+
+.notes-list {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.notes-list li {
+    background-color: var(--white);
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: normal;
+}
+
+.notes-list li div {
+    flex-grow: 1;
+}
+
+.notes-list li button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    margin-left: 5px; 
+}
+
+.notes-list li button:hover {
+    background-color: var(--secondary-color);
+}
+
+.notes-list li button.delete {
+    background-color: #d32f2f; /* Different color for delete button */
+}
+
+.notes-list li button.delete:hover {
+    background-color: #c62828;
+}
+#noteForm,
+#editForm {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.aside__title {
+    margin-top: 0;
+}
+
+.aside__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.aside__label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.aside__input,
+.aside__textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    font-family: var(--font-family);
+}
+
+.footer__links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer__link {
+    display: inline-block;
+}
+
+.footer__icon {
+    width: 70px;
+    height: 70px;
+}
