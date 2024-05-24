@@ -7,71 +7,71 @@
     <meta property="og:description"
         content="This is a Notes Web Application which can create, store, edit your notes." />
     <meta property="og:title" content="Krishna's Notes Project" />
-    <link rel="icon" href="https://raw.githubusercontent.com/N0AH-14/CDN/main/uploads/icons.png?token=A5CZLVM6HCTA3Q4DN6RIMR3GKBORE" type="image/x-icon" />
+    <link rel="icon" href="https://raw.githubusercontent.com/N0AH-14/CDN/main/uploads/icons.png" type="image/x-icon" />
     <title>Personal Notes</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/base.css">
+    <link rel="stylesheet" href="CSS/layout.css">
+    <link rel="stylesheet" href="CSS/components.css">
+    <script defer src="script.js"></script>
 </head>
 
 <body>
-    <header>
-        <img src="https://raw.githubusercontent.com/N0AH-14/CDN/main/uploads/logo.png?token=A5CZLVNMSFE2HQ25OSYSDH3GKBOTU">
-        <h1>Krishna's Notes Project</h1>
-        <button onclick="home()">Home</button>
+    <header class="header">
+        <img src="https://raw.githubusercontent.com/N0AH-14/CDN/main/uploads/logo.png" alt="Logo" class="header__logo">
+        <h1 class="header__title">Krishna's Notes Project</h1>
+        <button id="homeBtn" type="button" class="header__button">Home</button>
         <div class="search-box">
-            <form id="searchForm">
-                <input type="text" placeholder="Search Notes" id="searchBtn">
-                <submit onclick="search()">Search</submit>
+            <form id="searchForm" class="search-box__form">
+                <input type="text" placeholder="Search Notes" id="searchInput" class="search-box__input">
+                <button type="submit" class="search-box__button">Search</button>
             </form>
         </div>
     </header>
-    <div>
-        <main>
-            <article>
-                <div id="heading">
-                    <h5>My Notes:</h5>
-                    <button id="newNoteBtn" onclick="newNote()">New Note</button>
-                </div>
-                <div id="searchResults" hidden="true">
-                    <h5>Search Results:</h5>
-                </div>
-                <ol>
-                </ol>
-            </article>
-        </main>
-        <aside>
-            <div id="noteForm" hidden="true">
-                <h5>New Note</h5>
-                <form id="newNoteForm">
-                    <input type="text" id="titleBtn" placeholder="Title" required>
-                    <textarea id="textBtn" placeholder="Notes Go Here..." required></textarea>
-                    <submit onclick="addNote()">Add Note</submit>
-                </form>
+    <main class="main">
+        <section class="notes-section">
+            <div id="heading" class="notes-section__heading">
+                <h5 class="notes-section__title">My Notes:</h5>
+                <button id="newNoteBtn" type="button" class="notes-section__new-note-button">New Note</button>
             </div>
-            <div id="editForm" hidden="true">
-                <h5>Edit Note</h5>
-                <form id="editNoteForm">
-                    <input type="text" id="titleEditBtn" required>
-                    <textarea id="textEditBtn" required></textarea>
-                    <button id="saveNote">Save Changes</button>
-                </form>
+            <div id="searchResults" hidden>
+                <h5 class="search-results__title">Search Results:</h5>
             </div>
-        </aside>
-    </div>
-    <footer>
-        <div>
-            <span>
-                <a href="https://www.linkedin.com/in/n0ah14/">
-                    <img src="https://raw.githubusercontent.com/N0AH-14/CDN/main/uploads/linkedin.png?token=A5CZLVMB45MNPPDXVSD3GN3GKBOSU" alt="linkedin">
-                </a>
-            </span>
-            <span>
-                <a href="https://github.com/N0AH-14">
-                    <img src="https://raw.githubusercontent.com/N0AH-14/CDN/main/uploads/github.png?token=GHSAT0AAAAAACRVLZUXOGWG3LSYQYXP4XZ2ZSQLZFA" alt="linkedin">
-                </a>
-            </span>
+            <ol class="notes-list"></ol>
+        </section>
+    </main>
+    <aside class="aside">
+        <div id="noteForm" hidden>
+            <h5 class="aside__title">New Note</h5>
+            <form id="newNoteForm" class="aside__form">
+                <label for="titleInput" class="aside__label">Title</label>
+                <input type="text" id="titleInput" class="aside__input" required>
+                <label for="textInput" class="aside__label">Notes</label>
+                <textarea id="textInput" class="aside__textarea" required></textarea>
+                <button type="submit" class="aside__button">Add Note</button>
+            </form>
+        </div>
+        <div id="editForm" hidden>
+            <h5 class="aside__title">Edit Note</h5>
+            <form id="editNoteForm" class="aside__form">
+                <label for="editTitleInput" class="aside__label">Title</label>
+                <input type="text" id="editTitleInput" class="aside__input" required>
+                <label for="editTextInput" class="aside__label">Notes</label>
+                <textarea id="editTextInput" class="aside__textarea" required></textarea>
+                <button type="submit" class="aside__button">Save Changes</button>
+            </form>
+        </div>
+    </aside>
+    <footer class="footer">
+        <div class="footer__links">
+            <a href="https://www.linkedin.com/in/n0ah14/" class="footer__link">
+                <img src="https://raw.githubusercontent.com/N0AH-14/CDN/main/uploads/linkedin.png" alt="LinkedIn" class="footer__icon">
+            </a>
+            <a href="https://github.com/N0AH-14" class="footer__link">
+                <img src="https://raw.githubusercontent.com/N0AH-14/CDN/main/uploads/github.png" alt="GitHub" class="footer__icon">
+            </a>
         </div>
     </footer>
-    <script src="script.js"></script>
 </body>
 
 </html>
