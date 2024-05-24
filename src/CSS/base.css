@@ -1,6 +1,33 @@
 /* Font face definitions */
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+.fira-code-bold {
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  .fira-code-semi-bold {
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .fira-code-light {
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .fira-code-regular {
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+  }
 /* CSS Variables */
 :root {
     --primary-color: #0288d1;
@@ -8,7 +35,7 @@
     --background-color: #e0f7fa;
     --text-color: #333;
     --white: #ffffff;
-    --font-family: 'FiraCode', Arial, sans-serif;
+    --font-family: 'Fira Code', Arial, sans-serif;
 }
 
 /* General settings */
